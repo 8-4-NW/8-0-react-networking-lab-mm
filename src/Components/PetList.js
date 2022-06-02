@@ -7,12 +7,13 @@ export default class PetList extends Component {
   render() {
     const { petList } = this.props;
     return (
-      <aside className="pets-list">
+      <div>
+     
         {petList.map((pets) => {
-          <p>{pets.name}</p>
+          return <p>{pets.name}</p>
         })}
         
-      </aside>
+      </div>
     );
   }
 }
