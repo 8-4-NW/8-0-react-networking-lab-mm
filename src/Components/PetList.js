@@ -9,8 +9,12 @@ export default class PetList extends Component {
     return (
       <div>
      
-        {petList.map((pets) => {
-          return <p>{pets.name}</p>
+        {petList.map((pets, index) => {
+          return (
+            <span key = {pets.name}>
+              {(index ? ', ' : "") + pets.name }
+
+            </span>)
         })}
         
       </div>
